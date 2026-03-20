@@ -41,5 +41,13 @@ const checkwin = () => {
 }
 
 //Function to reset the game
+const resetGame = () => {
+    box.forEach((e) => {
+        e.innerHTML = "";
+        e.disabled = false;
+        trun0 = true;
+    });
+}
 
+resetBtn.addEventListener("click", resetGame);
 
